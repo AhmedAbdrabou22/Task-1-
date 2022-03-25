@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: darkred;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gameBoard{
+    background-color: #1a3263;
+    width:100vmin;
+    height:100vmin;
+    /*
+        vmin => بتحسب طول وعرض الصفحه المتصفح وبتخلي الديف بتاع الجيمبورد ثابته 
+    */
+    display: grid;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr);
+}
+.snake{
+    background-color: #e8e2db;
+    border:0.25vmin solid black;
+}
+.food{
+    border-radius: 50%;
+    background-color: #fab95b;
+    border:0.25vmin solid black;
+}
